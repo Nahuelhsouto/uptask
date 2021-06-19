@@ -10,7 +10,11 @@ html(lang="en")
         main.contenedor
             aside.contenedor-proyectos
                 .panel.crear-proyecto
+<<<<<<< HEAD
                     a.ali(href="/nuevo-proyecto") Nuevo Proyecto
+=======
+                    a.ali(href="/nuevo-proyecto" class="boton") Nuevo Proyecto
+>>>>>>> 79aa04ba1e64c6917c90dd58890d63bb52655d6f
                         span +
                 .panel.lista-proyectos
                     h2 Proyectos
@@ -21,7 +25,7 @@ html(lang="en")
                                     a(href=`/proyectos/${proyecto.url}`)= proyecto.nombre
             block contenido
 
-            //- pre= vardump(proyectos)
+          
         
         script(src="/dist/bundle.js")
         

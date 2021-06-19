@@ -1,13 +1,12 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
-// Referencia al Modelo donde vamos a autenticar
+
 const Usuarios = require('../models/Usuarios');
 
-// local strategy - Login con credenciales propios (usuario y password)
 passport.use(
     new LocalStrategy(
-        // por default passport espera un usuario y password
+        
         {
             usernameField: 'email',
             passwordField : 'password'
@@ -21,16 +20,16 @@ passport.use(
                     }
                 });
        
-                // El usuario existe, password incorrecto
+                
                 if(!usuario.verificarPassword(password)) {
                     return done(null, false, {
                         message : 'Password Incorrecto'
                     })
                 } 
-                // El email existe, y el password correcto
+             
                 return done(null, usuario);
             } catch (error) {
-                // Ese usuario no existe
+               
                 return done(null, false, {
                     message : 'Esa cuenta no existe'
                 })
@@ -39,15 +38,15 @@ passport.use(
     )
 );
 
-// serializar el usuario
+
 passport.serializeUser((usuario, callback) => {
     callback(null, usuario);
 });
 
-// deserializar el usuario
+
 passport.deserializeUser((usuario, callback) => {
     callback(null, usuario);
 });
 
-// exportar
+
 module.exports = passport;
