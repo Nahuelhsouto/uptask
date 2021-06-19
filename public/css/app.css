@@ -13,7 +13,7 @@ body {
 /** Login **/
 .login,
 .crear-cuenta {
-  background: #455a64;
+  background: #41bba5;
 }
 .contenedor-formulario {
   display: flex;
@@ -50,6 +50,7 @@ body {
   display: flex;
   margin-bottom: 1rem;
   align-items: center;
+  border-radius: 80px;
 }
 .campo label {
   flex: 0 0 100px;
@@ -74,12 +75,13 @@ body {
   justify-content: flex-end;
 }
 .boton {
-  background-color: #fdd835;
+  background-color: #16bbd8;
   text-align: center;
   transition: background-color 0.5s ease-in-out;
   padding: 2rem;
   text-transform: uppercase;
   border: none;
+  border-radius: 20px;
   font-weight: 900;
   width: 250px;
   margin: 0 auto;
@@ -95,7 +97,7 @@ body {
 
 .boton:hover {
   cursor: pointer;
-  background-color: rgb(219, 184, 29) !important;
+  background-color: rgb(30, 85, 136) !important;
 }
 .boton.eliminar {
   margin-top: 1rem;
@@ -113,7 +115,7 @@ body.index {
   height: 100vh;
 }
 .barra {
-  background-color: #455a64;
+  background-color: #46c49e;
   padding: 1rem;
   height: 60px;
   display: flex;
@@ -133,7 +135,7 @@ body.index {
 .contenedor-proyectos {
   height: 100%;
   max-width: 300px;
-  background-color: #607d8b;
+  background-color: #2f98cc;
   padding-top: 1rem;
 }
 .panel {
@@ -146,7 +148,7 @@ body.index {
   text-decoration: none;
 }
 .panel h2 {
-  color: #fdd835;
+  color: #30d8ab;
   font-weight: 900;
   text-align: center;
   font-size: 2rem;
@@ -198,7 +200,7 @@ body.index {
 .agregar-tarea {
   max-width: 800px;
   width: 90%;
-  background-color: #607d8b;
+  background-color: #48d8a1c2;
   margin: 0 auto;
   padding: 2rem;
   color: white;
@@ -357,12 +359,13 @@ a.regis {
 }
 
 .ali {
-  background-color: #fdd835;
+  background-color: #78e47cc6;
   text-align: center;
   transition: background-color 0.5s ease-in-out;
   padding: 2rem;
   text-transform: uppercase;
   border: none;
+  border-radius: 20px;
   font-weight: 500;
   width: 250px;
   margin: 0 auto;
@@ -370,6 +373,9 @@ a.regis {
   display: flex;
   align-items: center;
   line-height: 0;
+}
+.ali :hover {
+  background-color: #45c949c6;
 }
 @media (max-width: 600px) {
   .caja-login {
@@ -404,7 +410,7 @@ a.regis {
     border: 0;
     flex: 1;
     text-align: left;
-    border: 1px solid #455a64;
+    border: 1px solid #1197d5;
     border-radius: 5rem;
     padding-left: 2rem;
     color: black;
